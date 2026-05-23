@@ -1,0 +1,15 @@
+/* breakpoints: max-width: 700px/43.75rem, min-width 1200/75rem */
+
+:root {
+  --navy: hsl(233, 47%, 7%);
+  --blue: hsl(244, 37%, 16%);
+  --purple: hsl(277, 64%, 61%);
+  --inter: "Inter", Helvetica, Arial, sans-serif;
+  --lexend: "Lexend Deca", Helvetica, arial, sans-serif;
+  --font-size-36: 2.25rem;
+  --font-size-28: 1.75rem;
+  --font-size-24: 1.5rem;
+  --font-size-16: 1rem;
+  --font-size-15: 0.9375;
+  --font-size-12: 0.75rem;
+}

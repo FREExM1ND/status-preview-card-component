@@ -1,33 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main class="stats-preview-card">
+      <div class="stats-preview-card-image">
+        <picture class="hero-image">
+          <source
+            srcset="./images/image-header-desktop.jpg"
+            media="(min-width= 75rem)"
+          />
+          <img
+            src="./images/image-header-mobile.jpg"
+            alt="Employees collaborating at a table with their laptops"
+          />
+        </picture>
+      </div>
+      <div class="stats-preview-content">
+        <section class="stats-preview-text">
+          <h1 class="stats-preview-heading">
+            Get <span class="purple">insights</span> that help your business
+            grow.
+          </h1>
+          <p class="stats-preview-discover">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </section>
+        <section class="stats">
+          <div class="stat">
+            <p class="stats-value">10k+</p>
+            <p class="stats-category">companies</p>
+          </div>
+          <div class="stat">
+            <p class="stats-value">314</p>
+            <p class="stats-category">templates</p>
+          </div>
+          <div class="stat">
+            <p class="stats-value">12m+</p>
+            <p class="stats-category">queries</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="credits">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/FREExM1ND">Aaron Robbins</a>.
+    </footer>
+  </body>
 </html>
