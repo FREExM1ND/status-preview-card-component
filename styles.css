@@ -62,9 +62,10 @@ body {
 .stats-preview-card {
   background-color: var(--blue);
   margin-inline: var(--spacing-24);
-  & .stats-preview-card-image {
-    object-fit: contain;
-  }
+}
+
+.stats-preview-card-image {
+  object-fit: scale-down;
 }
 
 .stats-preview-content {
