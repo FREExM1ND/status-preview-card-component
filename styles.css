@@ -27,6 +27,7 @@
   --spacing-64: 4rem;
   --spacing-72: 4.5rem;
   --spacing-80: 5rem;
+  --border-radius: 0.5rem;
 }
 
 html {
@@ -54,18 +55,29 @@ li {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: var(--inter);
   background-color: var(--navy);
   color: white;
+  min-height: 100vh;
 }
 
 .stats-preview-card {
   background-color: var(--blue);
   margin-inline: var(--spacing-24);
+  margin-block: var(--spacing-80);
+  overflow: hidden;
+  border-radius: var(--border-radius);
 }
 
 .stats-preview-card-image {
-  object-fit: scale-down;
+}
+
+.mobile-image {
+  width: 100%;
 }
 
 .stats-preview-content {
@@ -84,6 +96,22 @@ body {
   & .stats-preview-discover {
     line-height: var(--line-height-165);
     opacity: var(--opacity-75);
+  }
+}
+
+.stats {
+  & .stat-value {
+    font-size: var(--font-size-24);
+    line-height: var(--line-height-120);
+    font-weight: var(--font-weight-bold);
+  }
+
+  & .stat-category {
+    font-size: var(--font-size-12);
+    line-height: var(--line-height-200);
+    font-family: var(--lexend);
+    opacity: var(--opacity-60);
+    font-weight: 300; /* investigate, font is thinner in design*/
   }
 }
 
