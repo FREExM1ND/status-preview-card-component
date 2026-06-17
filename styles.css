@@ -12,9 +12,10 @@
   --font-size-28: 1.75rem;
   --font-size-24: 1.5rem;
   --font-size-16: 1rem;
-  --font-size-15: 0.9375;
+  --font-size-15: 0.9375rem;
   --font-size-12: 0.75rem;
   --font-weight-bold: 700;
+  --font-weight-xlite: 200;
   --line-height-120: 120%;
   --line-height-125: 125%;
   --line-height-165: 165%;
@@ -28,6 +29,7 @@
   --spacing-72: 4.5rem;
   --spacing-80: 5rem;
   --border-radius: 0.5rem;
+  --letter-spacing: 0.09375rem;
 }
 
 html {
@@ -74,15 +76,19 @@ body {
 }
 
 .stats-preview-card-image {
+  background-color: var(--purple);
 }
 
 .mobile-image {
+  display: block;
   width: 100%;
+  mix-blend-mode: multiply;
 }
 
 .stats-preview-content {
-  padding: var(--spacing-24) var(--spacing-32);
+  padding: var(--spacing-32);
   text-align: center;
+
   & .stats-preview-heading {
     margin-bottom: var(--spacing-8);
     font-size: var(--font-size-28);
@@ -94,12 +100,17 @@ body {
     }
   }
   & .stats-preview-discover {
+    margin-bottom: var(--spacing-40);
     line-height: var(--line-height-165);
     opacity: var(--opacity-75);
+    font-weight: var(--font-weight-xlite);
   }
 }
 
 .stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
   & .stat-value {
     font-size: var(--font-size-24);
     line-height: var(--line-height-120);
@@ -111,18 +122,9 @@ body {
     line-height: var(--line-height-200);
     font-family: var(--lexend);
     opacity: var(--opacity-60);
-    font-weight: 300; /* investigate, font is thinner in design*/
+    letter-spacing: var(--letter-spacing);
+    font-weight: var(--font-weight-xlite);
   }
-}
-
-.stats-preview-discover {
-  margin-bottom: var(--spacing-40);
-}
-
-.stats {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-32);
 }
 
 .credits {
