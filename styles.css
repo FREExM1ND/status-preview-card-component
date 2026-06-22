@@ -69,7 +69,7 @@ body {
 
 .stats-preview-card {
   background-color: var(--blue);
-  margin-inline: var(--spacing-24);
+  max-width: 87%;
   margin-block: var(--spacing-80);
   overflow: hidden;
   border-radius: var(--border-radius);
@@ -101,9 +101,10 @@ body {
   }
   & .stats-preview-discover {
     margin-bottom: var(--spacing-40);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-xlite);
     line-height: var(--line-height-165);
     opacity: var(--opacity-75);
-    font-weight: var(--font-weight-xlite);
   }
 }
 
@@ -130,4 +131,29 @@ body {
 .credits {
   font-size: var(--font-size-12);
   text-align: center;
+}
+
+@media screen and (width >= 43.75rem) {
+  .stats-preview-card {
+    max-width: 73%;
+  }
+
+  .stats-preview-content {
+    padding: var(--spacing-64) var(--spacing-80);
+    text-align: left;
+
+    & .stats-preview-heading {
+      margin-bottom: var(--spacing-24);
+      font-size: var(--font-size-36);
+    }
+
+    & .stats-preview-discover {
+      margin-bottom: var(--spacing-72);
+    }
+  }
+
+  .stats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
