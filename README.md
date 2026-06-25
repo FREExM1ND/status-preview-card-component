@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-using-native-css-lMwHAwQo02)
 - [Live Site URL](https://freexm1nd.github.io/stats-preview-card-component/)
 
 ## My process
